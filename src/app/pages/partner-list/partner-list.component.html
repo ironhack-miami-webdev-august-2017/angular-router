@@ -1,0 +1,13 @@
+<h2> Our Partners </h2>
+
+<ul>
+  <li *ngFor="let onePartner of partnerThang.getPartners()">
+    <h3> {{ onePartner.name }} </h3>
+    <p> Industry: {{ onePartner.industry }} </p>
+
+                  <!-- /partners/  :thePartnerId -->
+    <a [routerLink]="['/partners', onePartner.id]">
+      See Details
+    </a>
+  </li>
+</ul>
