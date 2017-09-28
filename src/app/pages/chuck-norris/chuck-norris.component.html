@@ -1,0 +1,19 @@
+<h2> Random Chuck Norris Joke </h2>
+
+<h3> Joke #{{ randomJoke.id }} </h3>
+
+<p> {{ randomJoke.joke }} </p>
+
+<div *ngIf="randomJoke.categories && randomJoke.categories.length > 0">
+  <h4> Categories </h4>
+
+  <ul>
+    <li *ngFor="let oneCategory of randomJoke.categories">
+      {{ oneCategory }}
+    </li>
+  </ul>
+</div>
+
+<button (click)="getRandomJoke()">
+  Get Another Joke
+</button>

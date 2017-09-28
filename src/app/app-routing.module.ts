@@ -6,6 +6,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { PartnerListComponent } from './pages/partner-list/partner-list.component';
 import { PartnerDetailsComponent } from './pages/partner-details/partner-details.component';
+import { ChuckNorrisComponent } from './pages/chuck-norris/chuck-norris.component';
+import { CharacterComponent } from './pages/character/character.component';
 
 // "path" is the URL of the route
 // "component" is the content of the route
@@ -14,7 +16,9 @@ const routes: Routes = [
     { path: 'about',                  component: AboutComponent },
     { path: 'contact-us',             component: ContactUsComponent },
     { path: 'partners',               component: PartnerListComponent },
-    { path: 'partners/:thePartnerId', component: PartnerDetailsComponent }
+    { path: 'partners/:thePartnerId', component: PartnerDetailsComponent },
+    { path: 'chuck',                  component: ChuckNorrisComponent },
+    { path: 'characters',             component: CharacterComponent }
 ];
 
 @NgModule({
